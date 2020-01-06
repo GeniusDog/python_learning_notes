@@ -2,6 +2,7 @@
 
 #### 介绍
 Python学习过程中所编写的代码
+在CSDN上的笔记博客：https://blog.csdn.net/qq_36631076/category_9633370.html
 
 
 #### 使用说明
