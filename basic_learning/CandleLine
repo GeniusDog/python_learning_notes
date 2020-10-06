@@ -1,0 +1,32 @@
+#时间：2020.10.5 02点00分
+#输入：输入在一行中给出4个正实数，分别对应Open、High、Low、Close，其间以空格分隔。
+#输出：在一行中输出日K蜡烛的类型。如果有上、下影线，则在类型后加上with 影线类型。
+#      如果两种影线都有，则输出with Lower Shadow and Upper Shadow。
+
+open,high,low,close=(input().split())
+output=''
+if close<open:
+    #print("close<open")
+    output+="BW-Solid"
+if close>open:
+    #print("close>open")
+    output+="R-Hollow"
+if close ==open:
+    #print("close==open")
+    output+="R-Cross"
+#print("当前的close=",close)
+#print("当前的high=",high)
+#print(output)
+
+flag_low= low < open and low < close
+flag_up= high>open and high>close
+
+
+if (flag_low and flag_up):
+    output+=' with Lower Shadow and Upper Shadow'
+elif flag_low:
+    output+=' with Lower Shadow'
+elif flag_up:
+    output+=' with Upper Shadow'
+
+print(output)
