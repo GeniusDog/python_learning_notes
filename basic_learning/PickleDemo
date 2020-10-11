@@ -1,0 +1,9 @@
+import pickle
+malist=['123','other']
+pickle_file=open('mylist.pkl','wb')#写入二进制
+pickle.dump(malist,pickle_file)#把列表保存在文件中
+读取：
+pickle_file=open('mylist.pkl','rb')#读取二进制
+malist2=pickle.load(pickle_file)
+print(malist2)
+['123', 'other']
