@@ -1,0 +1,19 @@
+# 时间：2020.10.12 12点42分
+# 创建一个"乌龟"对象并使用它
+
+class Turtle:
+    color="green"
+    foot=4
+    mouth="nomal"
+    shell=0
+    whight=0
+
+    def run(self):
+        print("我正在飞速奔跑！")
+
+    def eat(self):
+        print("吃得好香~")
+
+turtle=Turtle()
+turtle.eat()
+turtle.run()
